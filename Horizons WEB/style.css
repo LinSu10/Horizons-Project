@@ -97,7 +97,7 @@ a{
 #banner{
     position: relative;
     width: 100%;
-    background-image: url(Img/Banner.jpg);
+    background-image: url(img/Banner.jpg);
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -185,7 +185,7 @@ a{
 .cover {
     top: 0;
     position: absolute;
-    background-image: url(Img/Mision.jpg);
+    background-image: url(img/Mision.jpg);
     background-size: cover;
     color: black;
     width: 100%;
@@ -259,7 +259,7 @@ a{
 .cover2 {
     top: 0;
     position: absolute;
-    background-image: url(Img/Vision.jpg);
+    background-image: url(img/Vision.jpg);
     background-size: cover;
     color: black;
     width: 100%;
