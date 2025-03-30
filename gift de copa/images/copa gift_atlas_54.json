@@ -1,0 +1,59 @@
+﻿{"frames": {
+
+"CopaCoctel_00138":
+{
+	"frame": {"x":0,"y":0,"w":657,"h":842},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":657,"h":842},
+	"sourceSize": {"w":657,"h":842}
+},
+"CopaCoctel_00139":
+{
+	"frame": {"x":0,"y":844,"w":657,"h":842},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":657,"h":842},
+	"sourceSize": {"w":657,"h":842}
+},
+"CopaCoctel_00140":
+{
+	"frame": {"x":659,"y":0,"w":657,"h":842},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":657,"h":842},
+	"sourceSize": {"w":657,"h":842}
+},
+"CopaCoctel_00141":
+{
+	"frame": {"x":1318,"y":0,"w":657,"h":842},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":657,"h":842},
+	"sourceSize": {"w":657,"h":842}
+},
+"CopaCoctel_00142":
+{
+	"frame": {"x":659,"y":844,"w":657,"h":842},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":657,"h":842},
+	"sourceSize": {"w":657,"h":842}
+},
+"CopaCoctel_00143":
+{
+	"frame": {"x":1318,"y":844,"w":657,"h":842},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":657,"h":842},
+	"sourceSize": {"w":657,"h":842}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "24.0.2.12",
+	"image": "copa gift_atlas_54.png",
+	"format": "undefined",
+	"size": {"w":2048,"h":2048},
+	"scale": "1"
+}
+}
