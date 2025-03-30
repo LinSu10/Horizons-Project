@@ -1,0 +1,83 @@
+﻿{"frames": {
+
+"brujula_00010":
+{
+	"frame": {"x":0,"y":0,"w":596,"h":571},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":596,"h":571},
+	"sourceSize": {"w":596,"h":571}
+},
+"brujula_00011":
+{
+	"frame": {"x":598,"y":0,"w":596,"h":571},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":596,"h":571},
+	"sourceSize": {"w":596,"h":571}
+},
+"brujula_00012":
+{
+	"frame": {"x":1196,"y":0,"w":596,"h":571},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":596,"h":571},
+	"sourceSize": {"w":596,"h":571}
+},
+"brujula_00013":
+{
+	"frame": {"x":0,"y":573,"w":596,"h":571},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":596,"h":571},
+	"sourceSize": {"w":596,"h":571}
+},
+"brujula_00014":
+{
+	"frame": {"x":0,"y":1146,"w":596,"h":571},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":596,"h":571},
+	"sourceSize": {"w":596,"h":571}
+},
+"brujula_00015":
+{
+	"frame": {"x":598,"y":573,"w":596,"h":571},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":596,"h":571},
+	"sourceSize": {"w":596,"h":571}
+},
+"brujula_00016":
+{
+	"frame": {"x":1196,"y":573,"w":596,"h":571},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":596,"h":571},
+	"sourceSize": {"w":596,"h":571}
+},
+"brujula_00017":
+{
+	"frame": {"x":598,"y":1146,"w":596,"h":571},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":596,"h":571},
+	"sourceSize": {"w":596,"h":571}
+},
+"brujula_00018":
+{
+	"frame": {"x":1196,"y":1146,"w":596,"h":571},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":596,"h":571},
+	"sourceSize": {"w":596,"h":571}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "24.0.2.12",
+	"image": "brujula gif_atlas_22.png",
+	"format": "undefined",
+	"size": {"w":2048,"h":2048},
+	"scale": "1"
+}
+}
