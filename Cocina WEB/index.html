@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cocina</title>
+</head>
+<body>
+
+    <nav id="menu">
+
+        <img class="logo" src="img/Logo.png" alt="cuakcuak">
+
+        <ul>
+            <a href="#banner"><li> Inicio </li></a>
+            <a href="#sc2"><li> Instructores </li></a>
+            <a href="#"><li> Perfil Ocupacional </li></a>
+            <a href=""><li> Áreas de Trabajo </li></a>
+        </ul>
+
+    </nav>
+
+
+    <header id="banner">
+
+        <div class="fondo"></div>
+
+        <div class="texto">
+            <h1>Cocina <br> <b class="sub">Sabor, pasión y técnica</b> </h1>
+            <p>Descubre el arte de los sabores y transforma tu pasión en <br> profesión. ¡Estudia Técnico en Cocina en el SENA y abre las <br> puertas a un futuro lleno de oportunidades culinarias!</p>
+            <a href="#sc2"><img class="img-banner" src="img/Vermas2.png"></a>
+        </div>   
+    
+    </header>
+
+
+    <section id="sc1">
+
+        <div class="barra"></div>
+
+        <div class="titulo">
+            <h4>Entrevista</h4>
+            <h1>INSTRUCTOR</h1>
+        </div>
+
+        <div>
+            <iframe class="entrevista" width="560" height="315" src="https://www.youtube.com/embed/VnYvRZ5RC6Y?si=Obb8foMTkgk36rud" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="texto2">
+            <p>Cocina en el Servicio Nacional de Aprendizaje (SENA). Es un técnico, que prepara a los estudiantes en la elaboración de platos nacionales e internacionales, aplicando técnicas culinarias, normas de higiene y buenas prácticas en la manipulación de alimentos. Durante el curso, los aprendices adquieren habilidades en cocina caliente y fría, repostería, panadería y presentación de platos.</p>
+        </div>
+
+    </section>
+
+
+    <section id="sc2">
+
+        <div class="titulo2">
+            <h4>Instructores de la</h4>
+            <h1>RED</h1>
+        </div>
+
+        <div class="seccion">
+            <div class="carta">
+                <h5> Duración: <b class="subti"> 24 Meses. </b> </h5>
+                <h5> Nivel Estudio: <b class="subti"> Bachiller y Pruebas Saber 11. </b> </h5>
+                <h5> Modalidad: <b class="subti"> Presencial y a Distancia. </b> </h5>
+                <h5> Edad: <b class="subti"> 16 Años. </b> </h5>
+            </div>
+
+
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="img/fondo1.jpg" alt="background">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="img/Instructor.png" alt="profile">
+                            </div>
+                            <div class="name">Camilo Guevara</div>
+                            <div class="role">Gastrónomo</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/fondo2.jpg" alt="background">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="img/Instructor2.jpg" alt="profile">
+                            </div>
+                            <div class="name">Alejandro Villa</div>
+                            <div class="role">Repostero</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            
+            <script>
+                const slider = document.querySelector('.slider');
+                const slides = document.querySelectorAll('.slide');
+                const prev = document.querySelector('.prev');
+                const next = document.querySelector('.next');
+                let index = 0;
+                
+                next.addEventListener('click', () => {
+                    index = (index + 1) % slides.length;
+                    updateSlider();
+                });
+                
+                prev.addEventListener('click', () => {
+                    index = (index - 1 + slides.length) % slides.length;
+                    updateSlider();
+                });
+                
+                function updateSlider() {
+                    slider.style.transform = `translateX(${-100 * index}%)`;
+                }
+            </script>
+        </div>
+
+    </section>
+
+
+    <section id="sc3">
+
+        <div class="titulo3">
+            <h4>Perfil</h4>
+            <h1>Ocupacional</h1>
+        </div>
+        
+
+        <div class="slider-contenedor">
+            <div class="side-card left-card">Gestión <br> <b class="parte"> DE </b> <br> Cocina</div>
+            <div class="info-box1">
+                <p>• Capacidad para organizar y planificar el trabajo en la cocina, asegurando la eficiencia y la calidad en la producción de alimentos.</p>
+                <p>• Habilidad para gestionar el inventario de ingredientes y suministros, y controlar los costos asociados.</p>
+            </div>
+            <div class="main-card">Preparación <br> <b class="parte"> DE </b> <br> Alimentos</div>
+            <div class="info-box">
+                <p>• Capacidad para utilizar técnicas de cocina básicas y avanzadas, incluyendo la preparación y presentación de platos de manera atractiva y adecuada.</p>
+                <p>• Habilidad para seleccionar, preparar y cocinar una variedad de ingredientes.</p>
+            </div>
+            <div class="side-card right-card">Salud <br> <b class="parte"> E </b> <br> Higiene</div>
+            <div class="info-box2">
+                <p>• Conocimiento y aplicación de normas de higiene y seguridad alimentaria para prevenir contaminaciones y asegurar la calidad de los alimentos.</p>
+                <p>• Capacidad para manejar de manera segura los equipos y herramientas de cocina, y para aplicar prácticas seguras en la preparación de alimentos.</p>
+            </div>
+
+    </section>
+
+
+    <section id="sc4">
+        <div class="titulo4">
+            <h4>Áreas de</h4>
+            <h1>Trabajo</h1>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="icon"><img src="img/icono-hotel.png" alt="hotel"></div>
+                <div class="info">
+                    <p>Restaurantes y Hoteles.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="img/icono-catering.png" alt="catering"></div>
+                <div class="info">
+                    <p>Servicios de Catering y Eventos.</p>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="img/icono-bebida.png" alt="bebida"></div>
+                <div class="info">
+                    <p>Empresas de alimentos y bebidas.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="img/icono-comida.png" alt="icono-comida"></div>
+                <div class="info">
+                    <p>Negocios de Comida Rápida o Gourmet.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="img/icono-empresa.png" alt="empresas"></div>
+                <div class="info">
+                    <p>Emprendimiento Propio.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <footer id="pie-pagina">
+
+        <div class="completo">
+
+            <div class="footer">
+                <img src="img/HORIZONS logo.png" alt="logo">
+                <p>Estudiar hotelería y turismo es una excelente <br> manera de obtener las habilidades necesarias <br> para trabajar en una amplia gama de puestos <br> en el sector de los viajes y el turismo.</p>
+            </div>
+
+        <div class="listas">
+
+            <div class="enlace">
+                <h4>Enlaces</h4>
+                <ul>
+                        <a href="#banner"><li> Inicio </li></a>
+                        <a href="#sc2"><li> Instructores </li></a>
+                        <a href="#sc3"><li> Perfil Ocupacional </li></a>
+                        <a href="#sc4"><li> Áreas de Trabajo </li></a>
+                </ul>
+            </div>
+
+            <div class="redes">
+                <h4>Redes Sociales</h4>
+                <ul>
+                    <a href="https://www.facebook.com/share/1XruvLBSvJ/"><li><img src="img/facebook.png" alt="facebook"></li></a>
+                    <a href="https://www.instagram.com/horizonsproject_official?igsh=MTA4NHc1aWQxM3J4bg=="><li><img src="img/instagram.png" alt="instagram"></li></a>
+                    <a href="https://youtube.com/@horizons-project?si=gfl7FpI0B2O8EAOw"><li><img src="img/youtube.png" alt="youtube"></li></a>
+                </ul>
+            </div>
+
+            <div class="contacto">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><img src="img/telefono.png" alt="telefono">+57-3212356696</li>
+                    <li><img src="img/correo.png" alt="correo">horizonsprojectt@gmail.com</li>
+                    <li><img src="img/ubicacion.png" alt="gps">Centro de Desarrollo Agroempresarial SENA - Chía</li>
+                </ul>
+
+            </div>
+        </div> 
+
+        </div>
+
+        </div>  
+
+    </footer>
+
+    
+</body>
+</html>
