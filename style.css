@@ -1,0 +1,1204 @@
+@font-face {
+    font-family: KronaOne-Regular;
+    src: url(fonts/KronaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Krub-Regular;
+    src: url(fonts/Krub-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 6%;
+}
+
+#menu-ham{
+    display: none;
+}
+
+.icono{
+    display: none;
+}
+
+#menu{
+    background-color: #0406065d;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: fixed;
+    z-index: 3;
+}
+
+#menu ul{
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: space-around;
+    padding: 1em;
+    align-items: center;
+    font-size: 1vw;
+    font-family: KronaOne-Regular;
+}
+
+#menu ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+#menu ul li::before{
+    display: inline-block;
+    content: " ";
+    background-image: url(img/PUNTO.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+#menu p{
+    font-size: 35px;
+    font-family: KronaOne-Regular;
+}
+
+#banner a {
+   scale: 0.5;
+}
+
+.fondo{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0c27588a;
+    z-index: 0;
+}
+
+#banner{
+    position: relative;
+    width: 100%;
+    background-image: url(img/Banner.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    line-height: 1.3;
+    text-align: center;
+}
+
+#banner .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    z-index: 2;
+}
+
+#banner div{
+    padding-top: 5em;    
+}
+
+#banner h1{
+    font-size:8.125rem;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    letter-spacing: 20px;
+    line-height: 0.7;
+    padding-top: 1em;
+    color: #D6EAF1;
+}
+
+#banner .sub{
+    font-size: 4.375rem;
+    font-family: KronaOne-Regular;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 3px;
+    color: #D6EAF1;   
+}
+
+#banner p{
+    font-size: 1.563rem;
+    font-family: KronaOne-Regular;
+    padding-top: 1em;
+}
+
+img.img-banner{
+    width: 100%;
+}
+
+#sc1{
+    position: relative;
+    width: 100%;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+}
+
+.barra{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 20px;
+    background-color:#174262;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.titulo h4{
+    padding-top: 1em;
+    font-size: 4.375rem;
+    font-family: 'Times New Roman';
+    font-weight: 100;
+    font-style: italic;
+    color: #005D89;
+    letter-spacing: 3px;
+}
+
+.titulo h1{
+    font-size: 70px;
+    font-family: KronaOne-Regular;
+    color: #FEC400;
+}
+
+.titulo p{
+    font-size: 1.563rem;
+    padding-top: 1.5em;
+    font-family: KronaOne-Regular;
+    text-align: center;
+    color: black;
+    letter-spacing: 3px;
+    line-height: 1.3;
+    padding-bottom: 3em;
+}
+
+#sc1 ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1em;
+    align-items: center;
+    font-size: 40px;
+    font-family: KronaOne-Regular;
+    text-align: center;
+    color: #005D89;
+    padding-bottom: 3em;
+}
+
+.opc{
+    position: relative;
+}
+
+.barra2{
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 20px;
+    background-color:#FEC400;
+}
+
+.opc img{
+    width: 30%;
+}
+
+.opc div h6{
+    font-weight: 100;
+}
+
+.banner h1{
+    padding: 1em 0 1em 0;
+    width: 100%;
+    background-color: #0C2758;
+    text-align: center;
+    font-size: 130px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    letter-spacing: 20px;
+    line-height: 0.7;
+    color: #D6EAF1;
+}
+
+.banner .sub{
+    font-size: 70px;
+    font-family: KronaOne-Regular;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 3px;
+    color: #D6EAF1;   
+}
+
+.barra3{
+    z-index: 2;
+    position: absolute;
+    bottom: -10;
+    left: 0;
+    width: 500px;
+    height: 20px;
+    background-color:#FEC400;
+}
+
+#sc2{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.spot{
+    width: 50%;
+    margin-top: 5em;
+    border-radius: 3em;
+}
+
+#sc2 p{
+    font-size: 25px;
+    padding-top: 3em;
+    font-family: KronaOne-Regular;
+    text-align: center;
+    color: black;
+    letter-spacing: 3px;
+    line-height: 1.3;
+    padding-bottom: 3em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+#sc2 button{
+    font-size: 15px;
+    font-family: KronaOne-Regular;
+    color: white;
+    background-color: #0D2636;
+    border: none;
+    align-items: center;
+    padding: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+#sc3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+}
+
+#sc3 h4{
+    text-align: center;
+    font-size: 60px;
+    font-family: KronaOne-Regular;
+    font-weight: 100;
+    color: #FEC400;
+    letter-spacing: 3px;
+    padding-top: 3em;
+}
+
+.sc3-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.izq_sc3{
+    flex: 50%; 
+    position: absolute;
+    width: 100%;
+    margin-left: 5em;
+}
+
+.animacion{
+    position: absolute;
+    top: -5em;
+    left: 15em;
+}
+
+.texto-box{
+    text-align: center;
+    font-family: KronaOne-Regular; 
+    padding-top: 20em;
+    padding-left: 40em;
+}
+
+.texto-box h3{
+    font-size: 50px;
+    color: #0C2758;
+}
+
+.texto-box button{
+    font-size: 15px;
+    font-family: KronaOne-Regular;
+    color: white;
+    background-color: #0D2636;
+    border: none;
+    align-items: center;
+    padding: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-top: 2em;
+}
+
+.sc3-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30em;
+}
+
+.izq_sc3_2{
+    flex: 50%;
+}
+
+.texto-box_2{
+    text-align: center;
+    font-family: KronaOne-Regular;
+    padding-left: 13em;
+}
+
+.texto-box_2 h3{
+    font-size: 50px;
+    color: #0C2758;
+}
+
+.texto-box_2 button{
+    font-size: 15px;
+    font-family: KronaOne-Regular;
+    color: white;
+    background-color: #0D2636;
+    border: none;
+    align-items: center;
+    padding: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-top: 2em;
+}
+
+.der_sc3_2{
+    padding: 5em;
+    flex: 50%; 
+    position: relative;
+    width: 100%;
+}
+
+.animacion2{
+    position: absolute;
+    top: -20em;
+    right: 20em;
+}
+
+.sc3-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.izq_sc3_3{
+    flex: 50%; 
+    position: relative;
+    width: 100%;
+}
+
+.animacion3{
+    position: absolute;
+    top: 15em;
+    left: 15em;
+}
+
+.der_sc3_3{
+    flex: 50%;
+}
+
+.texto-box_3{
+    text-align: center;
+    font-family: KronaOne-Regular;
+    padding-left: 40em;
+    padding-top: 30em;
+}
+
+.texto-box_3 h3{
+    font-size: 50px;
+    color: #0C2758;
+}
+
+.texto-box_3 button{
+    font-size: 15px;
+    font-family: KronaOne-Regular;
+    color: white;
+    background-color: #0D2636;
+    border: none;
+    align-items: center;
+    padding: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-top: 2em;
+}
+
+#sc4{
+    margin-top: 20em;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.textico p{
+    font-size: 25px;
+    padding-top: 3em;
+    font-family: KronaOne-Regular;
+    text-align: center;
+    color: black;
+    letter-spacing: 3px;
+    line-height: 1.3;
+    padding-bottom: 3em;
+}
+
+.textico button{
+    font-size: 15px;
+    font-family: KronaOne-Regular;
+    color: white;
+    background-color: #0D2636;
+    border: none;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.iconos{
+    position: relative;
+}
+
+.iconos img{
+    width: 30%;
+}
+
+.iconos div h6{
+    font-weight: 100;
+}
+
+#sc4 ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1em;
+    align-items: center;
+    font-size: 40px;
+    font-family: KronaOne-Regular;
+    text-align: center;
+    color: #005D89;
+    padding-bottom: 3em;
+}
+
+#pie-pagina{
+    width: 100%;
+    background-color: #0B1F2F;
+    padding-bottom: 6em;
+    display: flex;
+}
+
+.footer img{
+    padding-top: 7em;
+    padding-left: 7em;
+    width: 70%;
+}
+
+.footer p{
+    padding-top: 3em;
+    padding-left: 5.5em;
+    font-size: 20px;
+    font-family: Krub-Regular;
+    color: white;
+}
+
+.completo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.listas{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8em;
+    gap: 15em;
+    margin-right: 5em;
+}
+
+.enlace{
+    font-size: 20px;
+    font-family: Krub-Regular;
+    color: white;
+}
+
+.enlace h4{
+    font-size: 25px;
+    padding-bottom: 1em;
+}
+
+.enlace ul{
+    list-style: none;
+    line-height: 2em;
+}
+
+.redes{
+    font-size: 20px;
+    font-family: Krub-Regular;
+    color: white;
+}
+
+.redes img{
+    width: 50%;
+}
+
+.redes h4{
+    font-size: 25px;
+    padding-bottom: 1em;
+}
+
+.redes ul{
+    list-style: none;
+}
+
+.contacto{
+    font-size: 20px;
+    font-family: Krub-Regular;
+    color: white;
+}
+
+.contacto h4{
+    font-size: 25px;
+    padding-bottom: 1em;
+}
+
+.contacto ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto ul li img{
+    width: 15%;
+}
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 390px){
+   
+    .logo{
+        width: 20%;
+    }
+    
+    .icono{
+        display: block;
+    }
+   #menu .menuham{
+        display: none !important;
+    }
+
+    #menu-ham:checked ~ .menuham{
+        display: block !important;
+    }
+
+    #menu{
+        flex-direction: row;
+    }
+
+    #menu ul li{
+        gap: 5em;
+    }
+    
+    #menu ul{
+        gap: 1em;
+        justify-content: center;
+        align-items:flex-start;
+        flex-direction: column;
+        text-align: left;
+        width: 60%;
+        padding: 1em;
+        font-size: 2.5vw;
+    }
+    
+    #menu ul li{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1em;
+       
+    }
+    
+    #menu ul li::before{
+        display: inline-block;
+        content: " ";
+        background-image: url(img/PUNTO.svg);
+        gap: 2em;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+    }
+    
+    #menu p{
+        font-size: 35px;
+        font-family: KronaOne-Regular;
+    }
+    
+    #banner .texto{
+        padding: 15em 0 0 0;
+    }
+
+    #banner h1{
+        font-size: 4em;
+    }
+
+    #banner .sub{
+        font-size: 0.5em;
+    }
+
+    #banner p{
+        font-size: 0.8em;
+    }
+
+    img.img-banner{
+        width: 60%;
+    }
+
+    .titulo h4{
+        font-size: 2em;
+        padding: 2em 0 0 0;
+    }
+
+    .titulo h1{
+        font-size: 2em;
+    }
+
+    .titulo p{
+        font-size: 0.7815em;
+        padding: 2em 2em 0 2em;
+    }
+
+    #sc1 ul{
+        flex-direction: column;
+        gap: 1em;
+        font-size: 1.5em;
+    }
+
+    .barra{
+        width: 12.5em;
+    }
+
+    .opc img{
+        width: 5em;
+    }
+
+    .barra2{
+        width: 12.5em;
+    }
+
+    .banner h1{
+        font-size: 4em;
+    }
+    
+    .banner .sub{
+        font-size: 0.6em;  
+    }
+    
+    .barra3{
+        width: 13em;
+    }
+
+    .spot{
+        width: 300px;
+    }
+
+    #sc2 p{
+        font-size: 0.6em;
+        padding: 3em 2em 0 2em;
+    }
+
+    #sc2 button{
+        font-size: 15px;
+        margin-top: 3em;
+    }
+
+    #sc3{
+        flex-direction: column;
+    }
+
+    #sc3 h4{
+        font-size: 1.875em;
+        padding-top: 2em;
+    }
+
+    #sc3 h3{
+        font-size: 30px;
+    }
+
+    .sc3-1{
+        display: flex;
+        flex-direction: column;
+        top: 7em;
+    }
+
+    .animacion{
+        top: -25em;
+        left: -9em;
+        width: 10%;
+        height: 10%;
+    }
+
+    .texto-box{
+        margin-top: 35em;
+        padding: 0;
+    }
+
+    .sc3-2{
+        display: flex;
+        flex-direction: column;  
+        margin: 0;
+    }
+
+    .texto-box_2{
+        padding: 0;
+        margin: 0;
+        margin-top: 15em;
+    }
+
+    .animacion2{
+        top: 1em;
+        left: -5em;
+        width: 5%;
+        height: 5%;
+    }
+
+    .sc3-3{
+        display: flex;
+        flex-direction: column;  
+        margin: 0;
+    }
+
+    .animacion3{
+        top: 35em;
+        left: -8em;
+    }
+
+    .izq_sc3_3{
+        padding: 0;
+        margin: 0;
+    }
+
+    .texto-box_3{
+        padding: 0;
+        margin: 0;
+        margin-top: 90em;
+    }
+
+    .barra4{
+        top: 318.5em;
+        width: 250px;
+    }
+
+    #sc4{
+        margin-top: 5em;
+    }
+
+    .textico p{
+        font-size: 10px;
+        padding: 0;
+        margin-bottom: 2em;
+    }
+    
+    #sc4 ul{
+        gap: 2em;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    #pie-pagina{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .footer img{
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        margin-left: 4em;
+        margin-top: 3em;
+        flex-direction: column;
+    }
+    
+    .footer p{
+        font-size: 20px;
+        padding: 0;
+        margin: 3em;
+    }
+    
+    .completo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .listas{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        margin: 4em;
+    }
+    
+    .enlace ul{
+        font-size: 20px;
+        font-family: Krub-Regular;
+        color: white;
+        margin-right: 6em;
+        list-style: none;
+        line-height: 2em;
+    }
+    
+    .redes{
+        margin-top: 2em;
+        padding: 0;
+    }
+    
+    .redes img{
+        width: 20%;
+    }
+    
+    .contacto{
+        margin-top: 2em;
+        padding: 0;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (min-width:391px) and (max-width: 1024px){
+
+    .logo{
+        width: 10%;
+    }
+    
+    #menu ul{
+        display: flex;
+        font-size: 9px;
+        gap: 1.5em;
+        padding: 0;
+        
+    }
+    
+    #menu ul li{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+    }
+    
+    #banner .texto {
+        margin-top: 3em;
+    }
+    
+    #banner .sub{
+        font-size: 50px;   
+    }
+
+    .titulo p{
+        margin: 1.5em;
+    }
+
+    #sc1 ul{
+        font-size: 20px;
+        margin-top: -3em;
+    }
+
+    .opc img{
+        width: 40%;
+    }
+
+    .banner .sub{
+        font-size: 50px;   
+    }
+
+    .spot{
+        width: 70%;
+    }
+    
+    #sc2 p{
+        font-size: 25px;
+        margin: 1em;
+    }
+    
+    #sc3 h4{
+        margin-top: -1em;
+    }
+    
+    .sc3-1{
+        flex-direction: column;
+    }
+
+    .izq_sc3{
+        padding: 0;
+    }
+
+    .animacion{
+        left: 3em;
+        top: -25em;
+    }
+
+    .texto-box {
+        margin-top: 45em;
+        padding: 0;
+        font-family: 10px;
+    }
+
+    .sc3-2{
+        margin: 0;
+        width: 100%;
+    }
+
+    .der_sc3_2{
+        padding: 0;
+    }
+
+    .izq_sc3_3{
+        margin-top: 50em;
+    }
+
+    .texto-box_2{
+        padding: 0;
+        margin: 0;
+        margin-top: 5em;
+        margin-left: 17em;
+    }
+
+    .texto-box_2 button{
+        padding: 15px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .animacion2{
+        top: 7em;
+        left: -25em;
+    }
+
+    .animacion3{
+        top: -5em;
+        left: 4em;
+    }
+
+    .texto-box_3{
+        margin-top: 50em;
+        padding: 0;
+    }
+
+    #sc4{
+        margin: 0;
+        top: 10em;
+    }
+
+    #sc4 ul{
+        margin-top: 2em;
+        font-size: 20px;
+        padding-bottom: 3em;
+        align-items: center;
+        text-align: center;
+    }
+
+    .iconos img{
+        width: 50%;
+    }
+
+    #pie-pagina{
+        width: 100%;
+    }
+    
+    .footer img{
+        width: 50%;
+        margin: 0;
+        margin-top: 5em;
+        margin-left: 4em;
+        padding: 0;
+    }
+    
+    .footer p{
+        font-size: 20px;
+        padding: 0;
+        margin: 3em;
+    }
+    
+    .completo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .listas{
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 0;
+        margin-left: 4em;
+        padding-right: 0;
+    }
+    
+    .enlace ul{
+        font-size: 20px;
+        font-family: Krub-Regular;
+        color: white;
+        margin-right: 6em;
+        list-style: none;
+        line-height: 2em;
+    }
+    
+    .redes{
+        margin-top: 2em;
+        padding: 0;
+    }
+    
+    .redes img{
+        width: 10%;
+    }
+    
+    .contacto{
+        margin-top: 2em;
+        padding: 0;
+    }
+
+    .contacto ul li{
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .contacto img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px){
+
+    #menu ul{
+        font-size: 15px;
+        gap: 1.5em;
+        padding: 0;
+    }
+
+    #sc1 p{
+        margin: 3em;
+    }
+
+    #sc2 p{
+        margin: 3em;
+    }
+
+    .animacion{
+        left: 5em;
+    }
+
+    .animacion2{
+        right: 3em;
+    }
+
+    .animacion3{
+        left: 5em;
+    }
+
+    .sc3-2 h3{
+        font-size: 40px;
+    }
+
+    .barra4{
+        top: 409.9em;
+    }
+
+    #pie-pagina{
+        padding: 0;
+    }
+    
+    .footer img{
+        width: 60%;
+    }
+    
+    .footer p{
+        padding: 0;
+        margin-left: 5.5em;
+        margin-top: 3em;
+    }
+    
+    .listas{
+        gap: 7em;
+        padding: 0;
+        margin: 3em;
+        margin-top: 7em;
+        margin-bottom: 5em;
+    }
+    
+    .enlace{
+        padding: 0;
+    }
+    
+    .redes{
+        padding-left: 0;
+    }
+    
+    .redes img{
+        width: 50%;
+    }
+    
+    .contacto{
+        padding: 0;
+    }
+    
+    .contacto h4{
+        font-size: 25px;
+        padding-bottom: 1em;
+    }
+    
+    .contacto img{
+        width: 15%;
+    }
+    
+}
