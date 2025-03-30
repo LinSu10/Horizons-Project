@@ -1,0 +1,1140 @@
+@font-face {
+    font-family: WorkSans;
+    src: url(fonts/WorkSans.ttf);
+}
+
+@font-face {
+    font-family: KronaOne-Regular;
+    src: url(fonts/KronaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Krub-Regular;
+    src: url(fonts/Krub-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 6%;
+}
+
+#menu{
+    background-color: #0406065d;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: fixed;
+    z-index: 3;
+}
+
+#menu ul{
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: space-around;
+    padding: 1em;
+    align-items: center;
+    font-size: 20px;
+    font-family: WorkSans;
+    font-weight: bolder;
+}
+
+#menu ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+#menu ul li::before{
+    display: inline-block;
+    content: " ";
+    background-image: url(img/PUNTO.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.lupa{
+    width: 300%;
+}
+
+.fondo{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0c27588a;
+    z-index: 0;
+}
+
+#banner{
+    position: relative;
+    width: 100%;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    line-height: 1.3;
+    text-align: center;
+}
+
+#banner .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    z-index: 2;
+}
+
+#banner h1{
+    font-size: 130px;
+    font-weight: bolder;
+    font-family: WorkSans;
+    letter-spacing: 20px;
+    line-height: 0.7;
+    color: white;
+}
+
+#banner h4{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: white;   
+}
+
+#banner h2{
+    font-size: 130px;
+    font-weight: bolder;
+    font-family: WorkSans;
+    letter-spacing: 20px;
+    line-height: 0.7;
+    color: white;
+}
+
+.barra{
+    z-index: 2;
+    position: absolute;
+    top: 59.2em;
+    left: 0;
+    width: 500px;
+    height: 20px;
+    background-color:#35860C;
+}
+
+#sc1{
+    width: 100%;
+    background-color: #39A900;
+}
+
+#fundado img{
+    padding-top: 4em;
+    width: 150%;
+}
+
+#fundado{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    padding-top: 4em;
+    padding-right: 20em;
+    padding-left: 10em;
+}
+
+.info h1{
+    font-size: 35px;
+    color: white;
+    font-family: WorkSans;
+    font-weight: bolder;
+}
+
+.info h5{
+    font-size: 50px;
+    font-family: WorkSans;
+    color: white;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.info p{
+    padding-top: 0.5em;
+    font-size: 30px;
+    color: white;
+    line-height: 1.5em;
+    font-family: WorkSans;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#sc1 button{
+    font-size: 20px;
+    font-family: WorkSans;
+    color: white;
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    padding-top: 1em;
+}
+
+#tarjetas{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8em;
+}
+
+.card-container {
+    width: 600px;
+    height: 500px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+  
+.card {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #2c6411;
+}
+  
+.card .front-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+  
+.card .front-content p {
+    font-size: 80px;
+    font-family: WorkSans;
+    font-weight: 700;
+    opacity: 1;
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+  
+.card .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    background: linear-gradient(-45deg, #428d1d 0%, #335224 100% );
+    color: #e8e8e8;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+    pointer-events: none;
+    transform: translateX(-96%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+  
+.card .content {
+    font-size: 20px;
+    font-family: WorkSans;
+}
+  
+.card:hover .content {
+    transform: translateY(0);}
+  
+.card:hover .front-content {
+    transform: translateX(-30%);
+}
+  
+.card:hover .front-content p {
+    opacity: 0;
+}
+
+.card-container2 {
+    width: 600px;
+    height: 500px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+  
+.card2 {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #2c6411;
+}
+  
+.card2 .front-content2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+  
+.card2 .front-content2 p {
+    font-size: 80px;
+    font-family: WorkSans;
+    font-weight: 700;
+    opacity: 1;
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+  
+.card2 .content2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    background: linear-gradient(-45deg, #428d1d 0%, #335224 100% );
+    color: #e8e8e8;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+    pointer-events: none;
+    transform: translateX(-96%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+  
+.card2 .content2{
+    font-size: 20px;
+    font-family: WorkSans;
+}
+  
+.card2:hover .content2 {
+    transform: translateY(0);}
+  
+.card2:hover .front-content2 {
+    transform: translateX(-30%);
+}
+  
+.card2:hover .front-content2 p {
+    opacity: 0;
+}
+
+.ultimo p{
+    padding-top: 3em;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 15em;
+    padding-right: 15em;
+    color: white;
+    line-height: 1.5em;
+    font-family: WorkSans;
+    font-weight: lighter;
+    font-style: italic;
+    padding-bottom: 3em;
+}
+
+#sc2{
+    width: 100%;
+    background-color: #fefefe;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%232d9311' fill-opacity='0.14'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.inicio{
+    text-align: center;
+    font-size: 50px;
+    font-family: WorkSans;
+    font-weight: bolder;
+    padding-top: 1em;
+    color: #39A900;
+    align-items: center;
+}
+
+.titulo h1{
+    text-align: center;
+    font-size: 60px;
+    width: 40%;
+    margin-top: 1.5em;
+    font-family: WorkSans;
+    font-weight: 400;
+    margin-left: 3em;
+    background-color: #39A900;
+    border-radius: 0.5em;
+    border-color: #447236 40px;
+    padding: 0.5em;
+    color: #163A03;
+}
+
+.primero p{
+    font-size: 30px;
+    padding-top: 2em;
+    padding-left: 7em;
+    padding-right: 32.5em;
+    text-align: right;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.imagenes img{
+    width: 25%;
+    padding-top: 5em;
+}
+
+.titulo2 h1{
+    text-align: center;
+    font-size: 60px;
+    width: 40%;
+    margin-top: 1.5em;
+    font-family: WorkSans;
+    font-weight: 400;
+    margin-left: 15em;
+    background-color: #39A900;
+    border-radius: 0.5em;
+    border-color: #447236 40px;
+    padding: 0.5em;
+    color: #163A03;
+}
+
+.segundo p{
+    font-size: 30px;
+    margin: 2em;
+    margin-left: 30em;
+    margin-right: 10em;
+    text-align: left;
+}
+
+.imagenes2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.imagenes2 img{
+    width: 25%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+#sc3{
+    width: 100%;
+    height: 160vh;
+    background-color: #39A900;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulito h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: WorkSans;
+    font-weight: bolder;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+    align-items: center;
+}
+
+.container {
+    margin-left: 20em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    width: 1200px;
+    height: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta {
+    background: #35860C;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.carta.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.carta:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carta img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h3 {
+    margin-top: 1em;
+    font-family: WorkSans;
+    font-style: italic;
+    font-size: 40px;
+    color: white;
+}
+
+.carta p{
+    margin-top: 0.5em;
+    font-size: 20px;
+    color: white;
+    font-family: Calibri;
+}
+
+#pie-pagina{
+    width: 100%;
+    background-color: #0B1F2F;
+    padding-bottom: 6em;
+    display: flex;
+}
+
+.footer img{
+    padding-top: 7em;
+    padding-left: 7em;
+    width: 70%;
+}
+
+.footer p{
+    padding-top: 3em;
+    padding-left: 5.5em;
+    font-size: 20px;
+    font-family: Krub-Regular;
+    color: white;
+}
+
+.completo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.listas{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 15em;
+    padding-top: 8em;
+}
+
+.enlace{
+    font-size: 20px;
+    font-family: Krub-Regular;
+    color: white;
+    padding-right: 6em;
+}
+
+.enlace h4{
+    font-size: 25px;
+    padding-bottom: 1em;
+}
+
+.enlace ul{
+    list-style: none;
+    line-height: 2em;
+}
+
+.redes{
+    font-size: 20px;
+    font-family: Krub-Regular;
+    color: white;
+    padding-left: 3em;
+}
+
+.redes img{
+    width: 50%;
+}
+
+.redes h4{
+    font-size: 25px;
+    padding-bottom: 1em;
+}
+
+.redes ul{
+    list-style: none;
+}
+
+.contacto{
+    font-size: 20px;
+    font-family: Krub-Regular;
+    color: white;
+    padding-left: 10em;
+}
+
+.contacto h4{
+    font-size: 25px;
+    padding-bottom: 1em;
+}
+
+.contacto img{
+    width: 15%;
+}
+
+.contacto ul{
+    list-style: none;
+}
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 390px){
+   
+    .logo{
+        width: 20%;
+    }
+    
+    #menu{
+        flex-direction: column;
+    }
+    
+    #menu ul{
+        justify-content: center;
+        align-items:flex-start;
+        flex-direction: column;
+        width: 60%;
+        padding: 1em;
+        font-size: 20px;
+    }
+    
+    #menu ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+    }
+    
+    #menu ul li::before{
+        display: inline-block;
+        content: " ";
+        background-image: url(img/PUNTO.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+    }
+    
+    #menu p{
+        font-size: 35px;
+        font-family: KronaOne-Regular;
+    }
+
+    .fondo{
+        height: 80vh;
+    }
+    
+    #banner{
+        height: 80vh;
+    }
+
+    #banner h1{
+        font-size: 2.5em;
+        letter-spacing: 0.2em;
+    }
+
+    #banner h4{
+        font-size: 1.5em;
+    }
+
+    #banner h2{
+        font-size: 3em;
+    }
+
+    img.img-banner{
+        width: 60%;
+    }
+/*
+    .barra{
+        width: 12.5em;
+    }
+*/
+
+    #fundado img{
+        width: 100%;
+        height: 100%;
+        margin-left: -2.5em;
+    }
+
+    #fundado{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info{
+        margin-top: 3em;
+        margin-left: 4em;
+        margin-right: 3em;
+        padding: 0;
+    }
+
+    .info h1{
+        font-size: 25px;
+    }
+
+    .info h5{
+        font-size: 23px;
+    }
+
+    .info p{
+        font-size: 20px;
+    }
+
+    #sc1 button{
+    font-size: 15px;
+    }
+
+    #tarjetas{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5em;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+    }
+    
+    .card-container {
+        width: 300px;
+        height: 600px;
+    }
+      
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+      
+    .card .front-content p {
+        font-size: 50px;;
+    }
+      
+    .card .content {
+        font-size: 15px;
+    }
+    
+    .card-container2 {
+        width: 300px;
+        height: 600px;
+    }
+
+    .card2 .front-content2 p {
+        font-size: 50px;
+    }
+      
+    .card2 .content2{
+        font-size: 15px;
+    }
+
+    .ultimo p{
+        padding: 0;
+        margin: 1.5em;
+        font-size: 20px;
+    }
+
+    .inicio h2{
+        font-size: 1em;
+        padding-top: 0;
+    }
+
+    .titulito h2{
+        font-size: 1.5em;
+    }
+    
+    .container {
+        margin-left: 5em;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .carta {
+        background: #35860C;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    
+    .carta.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .carta:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .carta img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    h3 {
+        margin-top: 1em;
+        font-family: WorkSans;
+        font-style: italic;
+        font-size: 40px;
+        color: white;
+    }
+    
+    .carta p{
+        margin-top: 0.5em;
+        font-size: 20px;
+        color: white;
+        font-family: Calibri;
+    }
+
+    #pie-pagina{
+        width: 100%;
+    }
+    
+    .footer img{
+        width: 10%;
+        flex-direction: column;
+    }
+    
+    .footer p{
+        font-size: 20px;
+        padding: 0;
+        margin: 3em;
+    }
+    
+    .completo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .listas{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 0;
+        margin-left: 4em;
+        padding-right: 0;
+    }
+    
+    .enlace ul{
+        font-size: 20px;
+        font-family: Krub-Regular;
+        color: white;
+        margin-right: 6em;
+        list-style: none;
+        line-height: 2em;
+    }
+    
+    .redes{
+        margin-top: 2em;
+        padding: 0;
+    }
+    
+    .redes img{
+        width: 20%;
+    }
+    
+    .contacto{
+        margin-top: 2em;
+        padding: 0;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (min-width:391px) and (max-width: 1024px){
+
+    .logo{
+        width: 10%;
+    }
+    
+    #menu ul{
+        font-size: 10px;
+        gap: 1.5em;
+        padding: 0;
+    }
+    
+    #menu ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+    }
+    
+    #banner h1{
+        font-size: 70px;   
+    }
+
+    .barra{
+        top: 64em;
+        left: 0;
+    }
+
+    #fundado img{
+        width: 40%;
+        height: 60%;
+    }
+    
+    .info{
+        padding: 5em;
+    }
+    
+    .info h1{
+        font-size: 25px;
+    }
+    
+    .info h5{
+        font-size: 25px;
+    }
+    
+    .info p{
+        font-size: 15px;
+    }
+    
+    #sc1 button{
+        font-size: 20px;
+    }
+
+    #tarjetas{
+        display: flex;
+        flex-direction: column;
+        padding-top: 3em;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .ultimo p{
+        font-size: 20px;
+        padding: 0;
+        margin: 3em;
+    }
+    
+    .container {
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+        width: 800px;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .carta {
+        background: #35860C;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    
+    .carta.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .carta:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .carta img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    h3 {
+        margin-top: 1em;
+        font-family: WorkSans;
+        font-style: italic;
+        font-size: 40px;
+        color: white;
+    }
+    
+    .carta p{
+        margin-top: 0.5em;
+        font-size: 20px;
+        color: white;
+        font-family: Calibri;
+    }
+
+    #pie-pagina{
+        width: 100%;
+    }
+    
+    .footer img{
+        width: 10%;
+        flex-direction: column;
+    }
+    
+    .footer p{
+        font-size: 20px;
+        padding: 0;
+        margin: 3em;
+    }
+    
+    .completo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .listas{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 0;
+        margin-left: 4em;
+        padding-right: 0;
+    }
+    
+    .enlace ul{
+        font-size: 20px;
+        font-family: Krub-Regular;
+        color: white;
+        margin-right: 6em;
+        list-style: none;
+        line-height: 2em;
+    }
+    
+    .redes{
+        margin-top: 2em;
+        padding: 0;
+    }
+    
+    .redes img{
+        width: 10%;
+    }
+    
+    .contacto{
+        margin-top: 2em;
+        padding: 0;
+        align-items: center;
+    }
+
+    .contacto img{
+        width: 5%;
+    }
+
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px){
+
+    #fundado img{
+        width: 40%;
+    }
+    
+    .info{
+        padding: 5em;
+    }
+
+    .barra{
+        top: 56.2em;
+    }
+
+    .ultimo p{
+        padding: 0;
+        margin: 4em;
+        font-size: 30px;
+    }
+
+    #pie-pagina{
+        padding: 0;
+    }
+    
+    .footer img{
+        width: 60%;
+    }
+    
+    .footer p{
+        padding: 0;
+        margin-left: 5.5em;
+        margin-top: 3em;
+    }
+    
+    .listas{
+        gap: 7em;
+        padding: 0;
+        margin: 3em;
+        margin-top: 7em;
+        margin-bottom: 5em;
+    }
+    
+    .enlace{
+        padding: 0;
+    }
+    
+    .redes{
+        padding-left: 0;
+    }
+    
+    .redes img{
+        width: 50%;
+    }
+    
+    .contacto{
+        padding: 0;
+    }
+    
+    .contacto h4{
+        font-size: 25px;
+        padding-bottom: 1em;
+    }
+    
+    .contacto img{
+        width: 15%;
+    }
+
+}
+
