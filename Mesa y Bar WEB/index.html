@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mesa y Bar</title>
+</head>
+<body>
+
+    <nav id="menu">
+
+        <img class="logo" src="img/Logo.png" alt="cuakcuak">
+
+        <ul>
+            <a href="#banner"><li> Inicio </li></a>
+            <a href="#sc2"><li> Instructores </li></a>
+            <a href="#"><li> Perfil Ocupacional </li></a>
+            <a href=""><li> Áreas de Trabajo </li></a>
+        </ul>
+
+    </nav>
+
+
+    <header id="banner">
+
+        <div class="fondo"></div>
+
+        <div class="texto">
+            <h1>Servicio <br> <b class="sub">Restaurante y Bar</b> </h1>
+            <p>Brindar experiencias inolvidables no solo satisface el paladar, <br> sino también el alma. ¡Estudia Servicio de Restaurante y Bar en <br> el SENA y abre las puertas a un futuro lleno de oportunidades!</p>
+            <a href="#sc2"><img class="img-banner" src="img/Vermas2.png"></a>
+        </div>   
+    
+    </header>
+
+
+    <section id="sc1">
+
+        <div class="barra"></div>
+
+        <div class="titulo">
+            <h4>Entrevista</h4>
+            <h1>INSTRUCTOR</h1>
+        </div>
+
+        <div>
+            <iframe class="entrevista" width="560" height="315" src="https://www.youtube.com/embed/Cdj5w_mwHCI?si=pMPa-p9MGZVemM_K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="texto2">
+            <p>Servicio de Restaurante y Bar en el Servicio Nacional de Aprendizaje (SENA). Es un técnico, que forma profesionales en la atención y servicio al cliente en establecimientos gastronómicos. Los aprendices adquieren habilidades en protocolo, montaje de mesas, maridaje, preparación de bebidas, coctelería y técnicas de servicio. Además, se capacitan en normas de higiene, seguridad alimentaria y manejo de insumos.</p>
+        </div>
+
+    </section>
+
+
+    <section id="sc2">
+
+        <div class="titulo2">
+            <h4>Instructores de la</h4>
+            <h1>RED</h1>
+        </div>
+
+        <div class="seccion">
+            <div class="carta">
+                <h5> Duración: <b class="subti"> 12 Meses. </b> </h5>
+                <h5> Nivel Estudio: <b class="subti"> Bachiller y Pruebas Saber 11. </b> </h5>
+                <h5> Modalidad: <b class="subti"> Presencial y a Distancia. </b> </h5>
+                <h5> Edad: <b class="subti"> 17 Años. </b> </h5>
+            </div>
+
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="img/fondo1.jpg" alt="background">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="img/Instructor.jpeg" alt="profile">
+                            </div>
+                            <div class="name">Freddy Daza</div>
+                            <div class="role">Servicio en alimentos, bebidas y barismo</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/fondo2.jpg" alt="background">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="img/Instructor2.jpg" alt="profile">
+                            </div>
+                            <div class="name">Jhonatan Diaz</div>
+                            <div class="role">Bartender</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            
+            <script>
+                const slider = document.querySelector('.slider');
+                const slides = document.querySelectorAll('.slide');
+                const prev = document.querySelector('.prev');
+                const next = document.querySelector('.next');
+                let index = 0;
+                
+                next.addEventListener('click', () => {
+                    index = (index + 1) % slides.length;
+                    updateSlider();
+                });
+                
+                prev.addEventListener('click', () => {
+                    index = (index - 1 + slides.length) % slides.length;
+                    updateSlider();
+                });
+                
+                function updateSlider() {
+                    slider.style.transform = `translateX(${-100 * index}%)`;
+                }
+            </script>
+        </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="sc3">
+
+        <div class="titulo3">
+            <h4>Perfil</h4>
+            <h1>Ocupacional</h1>
+        </div>
+        
+
+        <div class="slider-contenedor">
+            <div class="side-card left-card">Atención y <br> <b class="parte"> SERVICIO </b> <br> al Cliente</div>
+            <div class="info-box1">
+                <p>• Habilidad para interactuar de manera profesional y amable con los clientes, entender sus necesidades y ofrecer un servicio de alta calidad.</p>
+                <p>• Capacidad para gestionar y resolver quejas y conflictos de manera efectiva, garantizando una experiencia positiva para el cliente.</p>
+            </div>
+            <div class="main-card">Operación <br> <b class="parte"> DE </b> <br> Restaurante</div>
+            <div class="info-box">
+                <p>• Habilidad para organizar y coordinar la disposición de mesas, gestionar reservas y asegurar un flujo eficiente en el servicio.</p>
+                <p>• Conocimiento de normas de etiqueta y protocolo en el servicio de alimentos y bebidas.</p>
+            </div>
+            <div class="side-card right-card">Maneja <br> <b class="parte"> DE </b> <br> Bar</div>
+            <div class="info-box2">
+                <p>• Capacidad para preparar y servir una variedad de bebidas alcohólicas y no alcohólicas, incluyendo cócteles y mezclas.</p>
+                <p>• Habilidad para manejar y mantener los equipos y utensilios de bar de manera segura y efectiva.</p>
+            </div>
+
+    </section>
+
+
+    <section id="sc4">
+        <div class="titulo4">
+            <h4>Áreas de</h4>
+            <h1>Trabajo</h1>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="icon"><img src="img/icono-hotel.png" alt="hotel"></div>
+                <div class="info">
+                    <p>Restaurantes y Hoteles.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="img/icono-evento.png" alt="eventos"></div>
+                <div class="info">
+                    <p>Servicios de Catering y Eventos.</p>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="img/icono-bebida.png" alt="bebida"></div>
+                <div class="info">
+                    <p>Empresas de alimentos y bebidas.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="img/icono-comida.png" alt="icono-comida"></div>
+                <div class="info">
+                    <p>Negocios de Comida Rápida o Gourmet.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="img/icono-empresa.png" alt="empresas"></div>
+                <div class="info">
+                    <p>Emprendimiento Propio.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <footer id="pie-pagina">
+
+        <div class="completo">
+
+            <div class="footer">
+                <img src="img/HORIZONS logo.png" alt="logo">
+                <p>Estudiar hotelería y turismo es una excelente <br> manera de obtener las habilidades necesarias <br> para trabajar en una amplia gama de puestos <br> en el sector de los viajes y el turismo.</p>
+            </div>
+
+        <div class="listas">
+
+            <div class="enlace">
+                <h4>Enlaces</h4>
+                <ul>
+                        <a href="#banner"><li> Inicio </li></a>
+                        <a href="#sc2"><li> Instructores </li></a>
+                        <a href="#sc3"><li> Perfil Ocupacional </li></a>
+                        <a href="#sc4"><li> Áreas de Trabajo </li></a>
+                </ul>
+            </div>
+
+            <div class="redes">
+                <h4>Redes Sociales</h4>
+                <ul>
+                    <a href="https://www.facebook.com/share/1XruvLBSvJ/"><li><img src="img/facebook.png" alt="facebook"></li></a>
+                    <a href="https://www.instagram.com/horizonsproject_official?igsh=MTA4NHc1aWQxM3J4bg=="><li><img src="img/instagram.png" alt="instagram"></li></a>
+                    <a href="https://youtube.com/@horizons-project?si=gfl7FpI0B2O8EAOw"><li><img src="img/youtube.png" alt="youtube"></li></a>
+                </ul>
+            </div>
+
+            <div class="contacto">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><img src="img/telefono.png" alt="telefono">+57-3212356696</li>
+                    <li><img src="img/correo.png" alt="correo">horizonsprojectt@gmail.com</li>
+                    <li><img src="img/ubicacion.png" alt="gps">Centro de Desarrollo Agroempresarial SENA - Chía</li>
+                </ul>
+
+            </div>
+        </div> 
+
+        </div>
+
+        </div>  
+
+    </footer>
+
+    
+</body>
+</html>
